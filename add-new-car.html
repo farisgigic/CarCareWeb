@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CarCare </title>
+    <link rel ="icon" type ="imgage/x-icon" href="img/logo-f.png" >
+    <!-- css -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/addCar.css" type="text/css">
+    <link rel="stylesheet" href="css/toastr.min.css" type="text/css">
+    
+
+</head>
+<body>
+
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <ul class="header__top__widget">
+                            <li><i class="fa fa-clock-o"></i> Week day: 08:00 am to 18:00 pm</li>
+                            <li><i class="fa fa-envelope-o"></i> info@car-care.ba</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="header__top__right">
+                            <div class="header__top__phone">
+                                <i class="fa fa-phone"></i>
+                                <span>(+387) 61 387 071</span>
+                            </div>
+                            <div class="header__top__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt="CarCare logo"></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="header__nav">
+                        <nav class="header__menu">
+                            <ul>
+                                <li class="active"><a href="./index.html">Home</a></li>
+                                <li><a href="./about.html">About Us</a></li>
+                                <li><a href="./mycars.html">My Cars</a></li>
+                                <li><a href="forum.html">Forum</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__nav__widget">
+                            <div class="header__nav__widget__btn">
+                                <a href="#" class="search-switch"><i class="fa fa-search"></i></a>
+                            </div>
+                            <a href="login.html" class="primary-btn">
+                                <img src="img/icons/login-icon.png">
+                                Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="canvas__open">
+                <span class="fa fa-bars"></span>
+            </div> -->
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <section class="forum-section">
+        <div class="container">
+            
+            
+            <!-- Form 1 -->
+            <div id="form1" class="form-container">
+                <form id="carForm1">
+                    <h2>Add new car</h2>
+                    <!-- Form 1 Fields -->
+                    <div class="form-group">
+                        <label for="manufacturer">Manufacturer</label>
+                        <input type="text" class="form-control" id="manufacturer" name ="manufacturer" placeholder="Enter Manufacturer">
+                    </div>
+                    <div class="form-group">
+                        <label for="model">Model</label>
+                        <input type="text" class="form-control" id="model" name = "model" placeholder="Enter Model">
+                    </div>
+                    <div class="form-group">
+                        <label for="year">Year</label>
+                        <input type="text" class="form-control" id="year" name = "year" placeholder="Enter Year">
+                    </div>
+                    <div class="form-group">
+                        <label for="mileage">Mileage</label>
+                        <input type="text" class="form-control" id="mileage" name = "mileage" placeholder="Enter Mileage">
+                    </div>
+                    <div class="form-group">
+                        <label for="engine">Engine</label>
+                        <input type="text" class="form-control" id="engine" name = "engine" placeholder="Enter Engine">
+                    </div>
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="fuel">Fuel Type</label>
+                            <select class="form-select" id="fuel" name="fuel">
+                                <option value="">Select Fuel Type</option>
+                                <option value="petrol">Petrol</option>
+                                <option value="diesel">Diesel</option>
+                                <option value="electric">Electric</option>
+                                <option value="hybrid">Hybrid</option>
+                                <option value="lpg">LPG</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="transmission">Transmission</label>
+                            <select class="form-select" id="transmission" name="transmission">
+                                <option value="">Select Transmission Type</option>
+                                <option value="automatic">Automatic</option>
+                                <option value="manual">Manual</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="drivetrain">Drivetrain</label>
+                            <select class="form-select" id="drivetrain" name="drivetrain">
+                                <option value="">Select Fuel Type</option>
+                                <option value="fwd"> FWD </option>
+                                <option value="rwd"> RWD </option>
+                                <option value="awd"> AWD </option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="tires">Tires</label>
+                            <select class="form-select" id="tires" name="tires">
+                                <option value="">Select Tire Type</option>
+                                <option value="petrol">Winter</option>
+                                <option value="diesel">Summer</option>
+                                <option value="electric">All-Season</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">
+                            <img src="img/icons/icon-checked-svg 1.png" alt=""> Next
+                        </button>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Form 2 -->
+            <div id="form2" class="form-container" style="display: none;">
+                <form id="carForm2">
+                    <!-- New Image Upload Form -->
+                    <div class="form-group">
+                        <h3>Enter vehicle photos<hr></h3>
+                        <h6>Add photos</h6>
+                        <label id="file-upload" for="photos">Add photos</label>
+                        <div class="upload-container">
+                            <div class="upload-info">
+                                <p>You may upload a maximum of seven photos to ensure optimal performance</p>
+                            </div>
+                            <div class="upload-box">
+                                <p>Drag photos here ...</p>
+                                <span>or</span>
+                                <button type="button" class="btn btn-primary">Upload from your desktop</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">
+                            <img src="img/icons/icon-checked-svg 1.png" alt=""> Next
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <!-- Add Form 3 HTML after Form 2 -->
+            <div id="form3" class="form-container" style="display: none;">
+                <form id="carForm3">
+                    <!-- Third Form Fields -->
+                    <div class="form-group">
+                        <h3>Additional Vehicle Data<hr></h3>
+                        <label for="large_service">Large Service</label>
+                        <input type="text" class="form-control" id="large_service" name="large_service" placeholder="Enter last large service">
+                    </div>
+                    <div class="form-group">
+                        <label for="small_service">Small Service</label>
+                        <input type="text" class="form-control" id="small_service" name="small_service" placeholder="Enter last small service">
+                    </div>
+                    <div class="form-group">
+                        <label for="registration">Registration</label>
+                        <input type="text" class="form-control" id="registration" name="registration" placeholder="Enter your registration">
+                    </div>
+                    <div class="form-group">
+                        <label for="fdisc_pads">Front Disc Brake Pads [km] </label>
+                        <input type="text" class="form-control" id="fdisc_pads" name="fdisc_pads" placeholder="Enter your last change of Front Disc Brake Pads">
+                    </div>
+                    <div class="form-group">
+                        <label for="rdisc_pads">Rear Disc Brake Pads [km] </label>
+                        <input type="text" class="form-control" id="rdisc_pads" name="rdisc_pads" placeholder="Enter your last change of Rear Disc Brake Pads">
+                    </div>
+                    <div class="form-group">
+                        <label for="filters">Air & Oil Filter [km]</label>
+                        <input type="text" class="form-control" id="filters" name="filters" placeholder="Enter your last change of Air & Oil Filter">
+                    </div>
+                    <div class="form-group">
+                        <label for="toil">Transmission Oil [km]</label>
+                        <input type="text" class="form-control" id="toil" name="toil" placeholder="Enter your last change of Transmission Oil">
+                    </div>
+                    <div class="form-group">
+                        <label for="cabin_filter">Cabin Air Filter [km]</label>
+                        <input type="text" class="form-control" id="cabin_filter" name="cabin_filter" placeholder="Enter your last change of Cabin Air Filter">
+                    </div>
+                    <div class="form-group">
+                        <label for="inspection">Mandatory Inspection of the car  [km]</label>
+                        <input type="text" class="form-control" id="inspection" name="inspection" placeholder="Enter your last Mandatory Inspection of the car ">
+                    </div>
+                    <div class="form-group">
+                        <label for="deep_cleaning">Deep cleaning [km] </label>
+                        <input type="text" class="form-control" id="deep_cleaning" name="deep_cleaning" placeholder="Enter your last Deep cleaning">
+                    </div>
+                    <!-- Add more fields as necessary -->
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">
+                            <img src="img/icons/icon-checked-svg 1.png" alt=""> Save
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    
+     
+     <!-- Footer Section Begin -->
+     <footer class="footer set-bg" data-setbg="img/footer-bg.jpg">
+        <div class="container">
+            <div class="footer__contact">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__contact__title">
+                            <h2>Contact Us Now!</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__contact__option">
+                            <div class="option__item" style="background-color: #0D9FF2;"><i class="fa fa-phone"></i> (+387) 61 387 071</div>
+                            <div class="option__item email"><i class="fa fa-envelope-o" style="color: #0D9FF2;"></i> info@carcare.ba</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="index.html"><img src="img/logo-f.png" alt="logo"></a>
+                        </div>
+                        <p>Any questions?<br> Let us know, call us on (+387) 61 387 071 !</p>
+                        <div class="footer__social">
+                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="google"><i class="fa fa-google"></i></a>
+                            <a href="#" class="skype"><i class="fa fa-skype"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <div class="footer__widget">
+                        <h5>Useful links</h5>
+                        <ul>
+                            <li><a href="index.html"><i class="fa fa-angle-right"></i> Home</a></li>
+                            <li><a href="about.html"><i class="fa fa-angle-right"></i> About Us</a></li>
+                            <li><a href="mycars.html"><i class="fa fa-angle-right"></i> My Cars</a></li>
+                            <li><a href="forum.html"><i class="fa fa-angle-right"></i> Forum</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer__brand">
+                        <h5>Contact Us</h5>
+                        <ul>
+                            <li><a> Sarajevo, Trg Solidarnosti Alipašino, Bosnia and Herzegovina</a></li>
+                            <li><a> Contact Number :<br> (+387) 61 387 071 </a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="footer__copyright__text">
+                <p>Copyright &copy;CarCare <script>document.write(new Date().getFullYear());</script> All rights reserved</a></p>
+            </div>
+            
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+
+    <script src = "js/add-car.js"></script>
+    <script src="js/toastr.min.js"></script>
+    <script>
+
+// Handle the submission of Form 1
+document.getElementById("carForm1").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Check if all fields in Form 1 are filled
+    let isForm1Complete = true;
+    document.querySelectorAll("#carForm1 input").forEach(input => {
+        if (input.value === "") {
+            isForm1Complete = false;
+        }
+    });
+
+    if (isForm1Complete) {
+        // Hide Form 1 and show Form 2
+        document.getElementById("form1").style.display = "none";
+        document.getElementById("form2").style.display = "block";
+    }
+    else {
+        toastr.error("Please fill out all fields in the form.")
+    }
+});
+
+// Handle the submission of Form 2
+document.getElementById("carForm2").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Check if all fields in Form 2 are filled
+    let isForm2Complete = true;
+    document.querySelectorAll("#carForm2 input").forEach(input => {
+        if (input.value === "") {
+            isForm2Complete = false;
+        }
+    });
+
+    if (isForm2Complete) {
+        // Hide Form 2 and show Form 3
+        document.getElementById("form2").style.display = "none";
+        document.getElementById("form3").style.display = "block";
+    } else {
+        toastr.error("Please fill out all fields in the form")
+    }
+});
+
+// Handle the submission of Form 3
+document.getElementById("carForm3").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Check if all fields in Form 3 are filled
+    let isForm3Complete = true;
+    document.querySelectorAll("#carForm3 input").forEach(input => {
+        if (input.value === "") {
+            isForm3Complete = false;
+        }
+    });
+
+    if (isForm3Complete) {
+        // Process the final form submission
+        alert("All forms have been submitted!");
+        // Add your form submission logic here
+    }else {
+        toastr.error("Please fill out all fields in the form")
+    }
+});
+
+
+    </script>
+
+</body>
+
+</html>

@@ -174,7 +174,7 @@ ol {
     color: #333; /* Darker text for contrast */
     font-weight: 600;
     background: #f7f7f7; /* White background */
-    border: 0.5px solid #333; /* More visible border */
+    /* border: 0.5px solid #333; More visible border */
     border-radius: 5px;
     transition: all 0.3s ease;
 }
@@ -557,10 +557,10 @@ ol {
 	margin-right: 16px;
 }
 
-.hero__text .primary-btn img {
+/* .hero__text .primary-btn img {
 	position: relative;
 	top: -5px;
-}
+} */
 
 .hero__text .primary-btn.more-btn {
 	background: #ffffff;
@@ -568,23 +568,28 @@ ol {
 }
 
 .hero__text__title {
-	margin-bottom: 28px;
-}
-
-.hero__text__title span {
-	font-size: 20px;
-	color: #ffffff;
-	font-weight: 700;
-	text-transform: uppercase;
+    position: relative;
+    transform: translateY(-20px); /* Moves text up */
+    margin-left: -20px; /* Moves text left */
+    margin-top: -50px;
+    text-align: left;
+	font-family: 'Poppins', sans-serif;
 }
 
 .hero__text__title h2 {
-	font-size: 30px;
-	color: #ffffff;
-	font-weight: 700;
-	margin-top: 10px;
+    font-size: 22px;
+    color: #323232;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
+.hero__text__title p {
+    font-size: 18px;
+    color:darkgray;
+    margin: 5px 0;
+    font-weight: 500;
+	font-family: 'Poppins', sans-serif;
+}
 .hero__text__price {
 	position: relative;
 	padding-left: 140px;

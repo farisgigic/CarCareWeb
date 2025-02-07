@@ -26,6 +26,24 @@ h4{
     justify-content: flex-start;
 }
 
+/* Button */
+.primary-btn {
+    display: inline-block;
+    font-size: 16px; /* Smaller text size */
+    padding: 10px 20px; /* Adjusted padding */
+    color: #333; /* Darker text for contrast */
+    font-weight: 600;
+    background: #f7f7f7; /* White background */
+    border: 0.5px solid #333; /* More visible border */
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+    background: #0dbdf2;
+    color: #fff; /* Text color change on hover */
+}
+
 /*---------------------
   Separator
 -----------------------*/
